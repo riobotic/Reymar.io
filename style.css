@@ -6,3 +6,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(banner.jpg);
+    background-size: cover;
+    background-position: right;
+    background: center;
+
+}
