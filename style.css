@@ -14,7 +14,7 @@ section
 {
     position: relative;
     min-height: 100vh;
-    /* background: url(banner.jpg); */
+    /* background: url(""); */
     background-size: cover;
     background-position: right;
     display: flex;
@@ -64,6 +64,14 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background: rgb(255, 255, 255);
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
 }
 header .logo
 {
@@ -73,4 +81,62 @@ header .logo
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 2px;
+}
+header.sticky .logo
+{
+    color: #111;
+
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+header ul li a
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: rgb(11, 11, 11);
+    text-decoration: none;
+}
+header.sticky ul li a
+{
+    color: #111;
+    
+}
+.heading
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.heading h2
+{
+    font-weight: 600;
+    font-size: 30px;
+}
+.content
+{
+    display: flex;
+    justify-content: space-between;
+}
+.contentBx h3
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.w50
+{
+    min-width: 50%;
+}
+img
+{
+    max-width: 100%;
 }
